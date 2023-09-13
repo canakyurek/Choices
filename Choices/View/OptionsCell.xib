@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionsCell" rowHeight="72" id="vam-JS-Vkm" customClass="OptionsCell" customModule="Choices" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vam-JS-Vkm" id="BQZ-Ed-ECB">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="O5b-Bl-At6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="O5b-Bl-At6" secondAttribute="trailing" id="Nck-dT-dS3"/>
+                    <constraint firstItem="O5b-Bl-At6" firstAttribute="top" secondItem="BQZ-Ed-ECB" secondAttribute="top" id="Nq2-SL-Cwh"/>
+                    <constraint firstItem="O5b-Bl-At6" firstAttribute="leading" secondItem="BQZ-Ed-ECB" secondAttribute="leading" id="TkY-Fg-MKE"/>
+                    <constraint firstAttribute="bottom" secondItem="O5b-Bl-At6" secondAttribute="bottom" id="gSD-jq-2Yb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-86.25954198473282" y="-46.478873239436624"/>
+        </tableViewCell>
+    </objects>
+</document>

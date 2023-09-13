@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="87" id="1AN-MY-dpY" customClass="StoryCell" customModule="Choices" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1AN-MY-dpY" id="QOk-Pp-P2R">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LRi-IF-hvD">
+                        <rect key="frame" x="30" y="12" width="333" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VZ-QT-qTY">
+                                <rect key="frame" x="0.0" y="0.0" width="333" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Voy-TQ-fzT">
+                                <rect key="frame" x="0.0" y="20" width="333" height="43"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8P-ij-x1n" customClass="OptionView" customModule="Choices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="43"/>
+                                        <color key="backgroundColor" red="1" green="0.79490526233792558" blue="0.32678889758933694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0J-Rf-Bi1" customClass="OptionView" customModule="Choices" customModuleProvider="target">
+                                        <rect key="frame" x="172.66666666666663" y="0.0" width="160.33333333333337" height="43"/>
+                                        <color key="backgroundColor" red="1" green="0.79490526230000003" blue="0.32678889760000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LRi-IF-hvD" firstAttribute="top" secondItem="QOk-Pp-P2R" secondAttribute="top" constant="12" id="U8L-UU-ILz"/>
+                    <constraint firstAttribute="trailing" secondItem="LRi-IF-hvD" secondAttribute="trailing" constant="30" id="XXF-js-Uh0"/>
+                    <constraint firstAttribute="bottom" secondItem="LRi-IF-hvD" secondAttribute="bottom" constant="12" id="d5T-cF-46I"/>
+                    <constraint firstItem="LRi-IF-hvD" firstAttribute="leading" secondItem="QOk-Pp-P2R" secondAttribute="leading" constant="30" id="jut-15-f9L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="option1" destination="r8P-ij-x1n" id="1zX-oS-xba"/>
+                <outlet property="option2" destination="e0J-Rf-Bi1" id="TDp-Iv-OSI"/>
+                <outlet property="optionStackView" destination="Voy-TQ-fzT" id="wSG-RO-sdn"/>
+                <outlet property="titleLabel" destination="0VZ-QT-qTY" id="AdX-KB-vh0"/>
+            </connections>
+            <point key="canvasLocation" x="-147.32824427480915" y="-81.338028169014095"/>
+        </tableViewCell>
+    </objects>
+</document>
